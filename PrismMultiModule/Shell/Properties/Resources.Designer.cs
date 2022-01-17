@@ -70,6 +70,15 @@ namespace Shell.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Kriss :).
+        /// </summary>
+        public static string AuthorName {
+            get {
+                return ResourceManager.GetString("AuthorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Close.
         /// </summary>
         public static string ButtonCloseCaption {

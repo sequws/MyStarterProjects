@@ -32,7 +32,7 @@
             <Label Content="v0.01b" FontSize="12" FontStyle="Italic"></Label>
             <StackPanel Orientation="Horizontal">
                 <Label Content="{x:Static p:Resources.MenuAboutAuthor}" FontWeight="Bold"></Label>
-                <Label Content="Kriss :)" />
+                <Label Content="{x:Static p:Resources.AuthorName}" />
             </StackPanel>
             <TextBlock></TextBlock>
         </StackPanel>

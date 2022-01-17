@@ -120,6 +120,9 @@
   <data name="ApplicationName" xml:space="preserve">
     <value>Prism Multi Project :)</value>
   </data>
+  <data name="AuthorName" xml:space="preserve">
+    <value>Kriss :)</value>
+  </data>
   <data name="ButtonCloseCaption" xml:space="preserve">
     <value>Close</value>
   </data>
