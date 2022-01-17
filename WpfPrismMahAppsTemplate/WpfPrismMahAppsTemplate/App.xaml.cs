@@ -24,6 +24,7 @@ namespace WpfPrismMahAppsTemplate
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<DemoView1>("Demo1View");
+            containerRegistry.RegisterDialog<AboutDialog>("AboutDialog");
 
             // Set view in region 
             var regionManager = Container.Resolve<IRegionManager>();

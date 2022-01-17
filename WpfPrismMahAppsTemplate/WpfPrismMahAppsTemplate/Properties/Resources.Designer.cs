@@ -61,6 +61,42 @@ namespace WpfPrismMahAppsTemplate.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SimpleTemplate.
+        /// </summary>
+        public static string ApplicationName {
+            get {
+                return ResourceManager.GetString("ApplicationName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kriss :).
+        /// </summary>
+        public static string AuthorName {
+            get {
+                return ResourceManager.GetString("AuthorName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string ButtonCloseCaption {
+            get {
+                return ResourceManager.GetString("ButtonCloseCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Author:.
+        /// </summary>
+        public static string DialogAboutAuthor {
+            get {
+                return ResourceManager.GetString("DialogAboutAuthor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to File.
         /// </summary>
         public static string MenuFile {

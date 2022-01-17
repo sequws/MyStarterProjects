@@ -23,7 +23,7 @@
                     <MenuItem  Header="{x:Static p:Resources.MenuFileClose}" Command="{Binding CloseCommand}"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="{x:Static p:Resources.MenuHelp}" Margin="2">
-                    <!--<MenuItem Header="{x:Static p:Resources.MenuHelpAbout}" Command="{Binding ShowAboutDialogCommand}"></MenuItem>-->
+                    <MenuItem Header="{x:Static p:Resources.MenuHelpAbout}" Command="{Binding ShowAboutDialogCommand}"></MenuItem>
                 </MenuItem>
             </Menu>
         </DockPanel>

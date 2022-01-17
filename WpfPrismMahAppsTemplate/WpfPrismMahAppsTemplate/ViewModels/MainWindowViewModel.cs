@@ -2,6 +2,7 @@
 using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
+using Prism.Services.Dialogs;
 
 namespace WpfPrismMahAppsTemplate.ViewModels
 {
@@ -16,21 +17,27 @@ namespace WpfPrismMahAppsTemplate.ViewModels
         }
 
         private readonly IRegionManager _regionManager;
+        private readonly IDialogService _dialogService;
 
-        public MainWindowViewModel(IRegionManager regionManager)
+        public MainWindowViewModel(
+            IRegionManager regionManager,
+            IDialogService dialogService)
         {
             _regionManager = regionManager;
-            NavigateCommand = new DelegateCommand<string>(Navigate);
+            _dialogService = dialogService;
 
-            //logger.Info("MainWindow Start!");
+            NavigateCommand = new DelegateCommand<string>(Navigate);
+            //_logger.Info("MainWindow Start!");
         }
 
         private void Navigate(string uri)
         {
             _regionManager.RequestNavigate("ContentRegion", uri);
+            //_logger.Trace($"Navigation to: {uri}");
         }
 
         #region commands
+
         public DelegateCommand<string> NavigateCommand { get; set; }
 
         private DelegateCommand _closeCommand;
@@ -46,6 +53,19 @@ namespace WpfPrismMahAppsTemplate.ViewModels
         {
             return true;
         }
+
+        private DelegateCommand _showAboutDialogCommand;
+        public DelegateCommand ShowAboutDialogCommand =>
+            _showAboutDialogCommand ?? (_showAboutDialogCommand = new DelegateCommand(ExecuteShowAboutDialogCommand));
+
+        void ExecuteShowAboutDialogCommand()
+        {
+            _dialogService.ShowDialog("AboutDialog", new DialogParameters(), (res) =>
+            {
+
+            });
+        }
+
         #endregion
     }
 }
