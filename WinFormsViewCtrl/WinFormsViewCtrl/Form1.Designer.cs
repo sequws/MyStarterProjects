@@ -62,6 +62,7 @@ namespace WinFormsViewCtrl
             this.btnViewA.TabIndex = 0;
             this.btnViewA.Text = "View A";
             this.btnViewA.UseVisualStyleBackColor = true;
+            this.btnViewA.Click += new System.EventHandler(this.btnViewA_Click);
             // 
             // btnViewB
             // 
@@ -71,6 +72,7 @@ namespace WinFormsViewCtrl
             this.btnViewB.TabIndex = 1;
             this.btnViewB.Text = "View B";
             this.btnViewB.UseVisualStyleBackColor = true;
+            this.btnViewB.Click += new System.EventHandler(this.btnViewB_Click);
             // 
             // Form1
             // 
