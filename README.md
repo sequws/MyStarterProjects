@@ -16,3 +16,7 @@ A multimodule solution based on Prism.
 - MahApps
 - NLog
 - Sample module with internal navigation
+
+### WinFormsViewCtrl
+
+Simple template for WinForms application with controller for view manipulation.
