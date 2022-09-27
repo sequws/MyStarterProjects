@@ -20,3 +20,6 @@ A multimodule solution based on Prism.
 ### WinFormsViewCtrl
 
 Simple template for WinForms application with controller for view manipulation.
+
+### Net6PrismMahAppsTemplate
+A template for a small project based on Prism. Like `WpfPrismMahAppsTemplate`, but for VS2022 and .NET6
