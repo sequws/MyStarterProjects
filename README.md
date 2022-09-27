@@ -23,3 +23,6 @@ Simple template for WinForms application with controller for view manipulation.
 
 ### Net6PrismMahAppsTemplate
 A template for a small project based on Prism. Like `WpfPrismMahAppsTemplate`, but for VS2022 and .NET6
+
+### Net6PrismMultiModule
+Add Net6PrismMultiModule - prism multi module template for .NET6. Like `PrismMultiModule` for VS2022 and .NET6
